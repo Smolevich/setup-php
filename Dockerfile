@@ -1,4 +1,5 @@
-FROM alpine:3.10
+ARG PHP_VERSION=7.3
+FROM php:${PHP_VERSION}-cli
 
 COPY LICENSE README.md /
 
